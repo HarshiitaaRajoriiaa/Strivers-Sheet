@@ -13,6 +13,7 @@ class Patterns {
             // nLetterTriangle(5);
             nLetterTriangle1(4);
         }
+        
         public static void nForest1(int n) {
             // Write your code here
             for(int i = 1;i<=n ;i++){
