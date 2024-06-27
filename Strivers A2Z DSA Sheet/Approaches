@@ -1,0 +1,3 @@
+String.valueOf(); = int into String
+get.getNumericValue(); = char into int
+.charAt() = accessing char in a String
