@@ -1,5 +1,6 @@
 String.valueOf(); = int into String
 get.getNumericValue(); = char into int
 .charAt() = accessing char in a String
-dtype variable = condition? iftrue : iffalse;
-String weight = x>200 ? "heavy" : "light";
+dtype variable = condition? iftrue : iffalse; //String weight = x>200 ? "heavy" : "light";
+LCM = (N1 *N2) / GCD
+

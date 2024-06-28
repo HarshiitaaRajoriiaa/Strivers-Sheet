@@ -5,14 +5,22 @@ public class Reverse {
         System.out.println(reverse(-123));
     }
     public static int reverse(int x){
-        int sol = 0 ; 
-        int sign = x <0 ? -1:1;
-        int X  = Math.abs(x);
-        while(X!=0){
-            int end = X%10;
-            sol = sol*10 + end;
-            X/=10;
+        int sol = 0;
+        while (x != 0) {
+            int end = x % 10;
+            x /= 10;
+            if (sol > Integer.MAX_VALUE / 10 || (sol == Integer.MAX_VALUE / 10 && end > 7)) { //2147483647
+                return 0;  // Integer overflow
+            }
+            if (sol < Integer.MIN_VALUE / 10 || (sol == Integer.MIN_VALUE / 10 && end < -8)) { //-2147483648
+                return 0;  // Integer underflow
+            }
+            sol = sol * 10 + end;
         }
-        return sol*sign;
+        return sol;
     }
+
+
+
+    //HANDLING THE BIGGER INPUT:
 }
