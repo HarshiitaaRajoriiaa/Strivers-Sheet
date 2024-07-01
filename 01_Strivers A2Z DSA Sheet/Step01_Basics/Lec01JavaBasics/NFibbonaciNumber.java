@@ -6,7 +6,7 @@ public class NFibbonaciNumber {
     public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
-        
+        //start from 1 as: F(1) = 1 , F(2) = 1
         if (n == 1 || n == 2) {
             System.out.println(1);
             return;
