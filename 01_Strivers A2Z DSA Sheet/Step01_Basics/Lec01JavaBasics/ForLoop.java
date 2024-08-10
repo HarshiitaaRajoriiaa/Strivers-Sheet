@@ -1,8 +1,7 @@
 package Lec01JavaBasics;
-
 import java.util.Scanner;
-
-public class NFibbonaciNumber {
+//https://www.naukri.com/code360/problems/nth-fibonacci-number_74156
+public class ForLoop {
     public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
@@ -22,4 +21,5 @@ public class NFibbonaciNumber {
 		System.out.println(current);
 	
 	}
+
 }

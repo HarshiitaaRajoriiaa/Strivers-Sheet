@@ -1,4 +1,5 @@
 package Lec01JavaBasics;
+//https://www.geeksforgeeks.org/problems/data-type-1666706751/1
 public class DataTypes{
     public static void main(String[] args) {
         System.out.println(dataTypeSize("Integer"));
