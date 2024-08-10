@@ -1,5 +1,5 @@
 package Lec04BasicMaths;
-
+//https://www.geeksforgeeks.org/problems/lcm-and-gcd4516/1
 public class LCM_GCD {
     public static void main(String[] args) {
         System.out.println(lcm_gcd((long)5, (long)10));

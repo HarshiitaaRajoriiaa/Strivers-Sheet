@@ -1,5 +1,5 @@
 package Lec05Recursion;
-
+//https://www.geeksforgeeks.org/problems/sum-of-first-n-terms5843/1
 public class SumOfNTerms {
     public static void main(String[] args) {
         System.out.println(sumOfNTerms(5));

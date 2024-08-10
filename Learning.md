@@ -90,8 +90,11 @@ public class Main {
 * f(n)= f(n-1) + f(n-2) 
 ## 4. Pass by reference and pass by value:
 * in java, primitive data types are passed by value , which means that only value is passed in function and if function is modify the value of passed variable, then there will be no changes in the value of passed variable. but in non primitive data types value is passed by reference which means along with value their address is passed by reference too, so while modifications by function value of passed variable is changed. 
-## Time complexity:
+## 5.  Time complexity:
 * The rate at which the time, required to run a code, changes with respect to the input size, is considered the time complexity. Basically, the time complexity of a particular code depends on the given input size, not on the machine used to run the code.
 * Best Case: best scenario refers to the case where the code takes the least amount of time to get executed
 * worst case : worst scenario refers to the case where the code takes the maximum amount of time to get executed.
 * avg case :  the case between the best and the worst.
+## 6. GCD and LCM:
+* a*b = gcd(a, b) * lcm(a, b)
+* gcd(a, b) = gcd(a , a%b) EUCLIDEAN THEORY

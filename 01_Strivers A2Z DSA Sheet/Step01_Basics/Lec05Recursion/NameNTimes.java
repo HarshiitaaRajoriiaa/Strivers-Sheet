@@ -1,14 +1,14 @@
 package Lec05Recursion;
-
+//https://www.geeksforgeeks.org/problems/print-gfg-n-times/1
 public class NameNTimes {
     public static void main(String[] args) {
-        name(5);
-        
+        printGfg(5);
     }
-    public static void name(int N){
-        if(N>0){
-            System.out.print("Name  ");
-            name(N-1);
-        }
+     public static void printGfg(int N) {
+        // code here
+        if(N<=0) return;
+        System.out.print("GFG" + " ");
+        printGfg(N-1);
+        
     }
 }

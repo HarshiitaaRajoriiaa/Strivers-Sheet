@@ -1,4 +1,5 @@
 package Lec04BasicMaths;
+//https://leetcode.com/problems/palindrome-number/description/
 public class Palindrome{
     public static void main(String[] args) {
         System.out.println(checkPalindrome(1234321));

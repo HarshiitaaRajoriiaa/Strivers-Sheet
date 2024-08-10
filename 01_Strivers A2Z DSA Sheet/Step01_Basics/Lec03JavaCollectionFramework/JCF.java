@@ -1,4 +1,4 @@
-package Step01_Basics.Lec03JavaCollectionFramework;
+package Lec03JavaCollectionFramework;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;
