@@ -98,3 +98,7 @@ public class Main {
 ## 6. GCD and LCM:
 * a*b = gcd(a, b) * lcm(a, b)
 * gcd(a, b) = gcd(a , a%b) EUCLIDEAN THEORY
+## 7. String:
+* character.isLetterOrDigit( value ):  returns true if the value contains letters or digits
+
+
