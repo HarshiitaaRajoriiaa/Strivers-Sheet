@@ -3,7 +3,7 @@ package Lec02LogicalThinking;
 class Patterns {
         public static void main(String[] args) {
             // nForest1(5);
-            // nForest2(5);
+            nForest2(5);
             // nTriangle1(10);
             // nTriangle2(5);
             // seeding(5);
@@ -15,13 +15,8 @@ class Patterns {
             // numberCrown(5);
             // nBinaryTriangle(7);
             // nNumberTriangle2(4);
-            // nLetterTriangle(5);
-            // nLetterTriangle2(4);
-            // nLetterTriangle3(5);
-            // alphaHill(4);
-            alphaTriangle(4);
         }
-        //01
+        //?01 https://www.naukri.com/code360/problems/n-forest_6570177?leftPanelTabValue=SUBMISSION
         public static void nForest1(int n) {
             // Write your code here
             for(int i = 0;i<n ;i++){
@@ -31,7 +26,7 @@ class Patterns {
                 System.out.println(" ");
             }
         } 
-        //02
+        //?02 https://www.naukri.com/code360/problems/n-2-forest_6570178?leftPanelTabValue=SUBMISSION
         public static void nForest2(int n) {
             // Write your code here
             for(int i = 0;i<n;i++){
@@ -41,7 +36,7 @@ class Patterns {
                 System.out.println(" ");
             }
         }
-        //03
+        //?03 https://www.naukri.com/code360/problems/n-triangles_6573689?leftPanelTabValue=SUBMISSION
         public static void nTriangle1(int n) {
             // Write your code here
             for(int i = 0;i<n;i++){
@@ -51,7 +46,7 @@ class Patterns {
                     System.out.println(" ");
                 }
         }
-        //04
+        //?04 https://www.naukri.com/code360/problems/triangle_6573690
         public static void nTriangle2(int n) {
             // Write your code here
             for(int i = 0;i<n;i++){
@@ -61,7 +56,7 @@ class Patterns {
                     System.out.println(" ");
                 }
         }
-        //05
+        //?05 https://www.naukri.com/code360/problems/seeding_6581892
         public static void seeding(int n) {
             // Write your code here
             for(int i = 0;i<n;i++){
@@ -71,7 +66,7 @@ class Patterns {
                     System.out.println(" ");
                 }
         }
-        //06
+        //?06 https://www.naukri.com/code360/problems/reverse-number-triangle_6581889?leftPanelTabValue=SUBMISSION
         public static void nNumberTriangle(int n) {
             // Write your code here
             for(int i=0;i<n;i++){
@@ -82,7 +77,7 @@ class Patterns {
             }
             
         }
-        //07
+        //?07 https://www.naukri.com/code360/problems/star-triangle_6573671
 
         public static void starPyramid(int n){
             for(int  i = 0 ; i<n;i++){
@@ -101,7 +96,7 @@ class Patterns {
                 System.out.println(" ");
             }
         }
-        //08
+        //?08 https://www.naukri.com/code360/problems/reverse-star-triangle_6573685
         public static void starPyramid2(int n){
             for(int  i = 0 ; i<n;i++){
                     //Spaces:
@@ -119,18 +114,18 @@ class Patterns {
                 System.out.println();
             }
         }
-        //09
+        //?09 https://www.naukri.com/code360/problems/star-diamond_6573686
         public static void starPyramid3(int n){
             starPyramid(n);
             starPyramid2(n);
         }
-        //10
+        //?10 https://www.naukri.com/code360/problems/rotated-triangle_6573688
         public static void nStarTriangle(int n) {
             // Write your code here
             nForest2(n);
             seeding(n-1);
         } 
-        //11
+        //?11 https://www.naukri.com/code360/problems/binary-number-triangle_6581890
         public static void nBinaryTriangle(int n) {
             for( int i = 1 ; i <=n;i++){
                 for(int j = 1 ; j <=i ; j++){
@@ -144,10 +139,11 @@ class Patterns {
                 System.out.println("");
             }
         }
-        //12
+        //?12 https://www.naukri.com/code360/problems/number-crown_6581894
         public static void numberCrown(int n){
-            int spaces = 2*4;
+            int spaces = 2*(n-1);
             for(int i = 1;i<=n;i++){
+
                 for(int j=1;j<=i;j++){
                     System.out.print(j + " ");
                 }
@@ -161,7 +157,7 @@ class Patterns {
                 spaces-=2;
             }
         }
-        //13
+        //?13 https://www.naukri.com/code360/problems/increasing-number-triangle_6581893
         public static void nNumberTriangle2(int n) {
             int counter = 1;
             for(int i = 1 ; i <=n ; i++){
@@ -172,71 +168,10 @@ class Patterns {
                 System.out.println("");
             }
         }
-        //14
-        public static void nLetterTriangle(int n) {
-            for(int i = 0;i<n;i++){
-                for(char j = 'A' ; j<='A'+i;j++){
-                    System.out.print(j);
-                }
-                System.out.println();
-            }
-        }
-        //15
-        public static void nLetterTriangle2(int n) {
-            for( int  i = 1 ; i <=n ; i ++){
-                for(char j = 'A' ; j <'A' +  (n- i+1) ; j++){
-                    System.out.print( j + " ");
-                }
-                System.out.println("");
-            }
-        }
-        //16
-        public static void nLetterTriangle3(int n) {
-            for( int  i = 1 ; i <=n ; i ++){
-                for(char j = 1 ; j <=i ; j++){
-                    System.out.print((char)('A' + i -1) + " ");
-                }
-                System.out.println("");
-            }
-            
-        }
-        //17
-        public static void alphaHill(int n) {
-            // Write your code here
-            //spaces:
-            for(int i = 0 ; i <n;i++){
-                for(int j = 0 ; j<n-1-i;j++){
-                    System.out.print(" ");
-                }
-                char o = 'A';
-                int change = (2*i+1)/2;
-                for(int j = 0;j < 2*i+1;j++){
-                    System.out.print(o);
-                    if(j<change){
-                        o++;
-                    }
-                    else{
-                        o--;
-                    }
+        //? 14
 
-                }
-                System.out.println();
-            }
-        }
-        //18
-        public static void alphaTriangle(int n) {
-           for(int i=0;i<n; i++){
-            for(char a = (char)(int)('A'+n-i-1); a <=(char)(int)('A'+n-1) ;a++){
-                System.out.print(a+" ");
-            }
-            System.out.println();
-            
-           } 
-        }
-        //19
-        //20
-        //21
-        //22
+        
+        
         
 }
 
