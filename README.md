@@ -1,6 +1,6 @@
 ***Striver SDE Sheet Solutions***
 
-@striver79
+[striver79](https://github.com/striver79)
 
 Welcome to my repository where I solve questions from the Striver's Sheet in the exact order and sequence provided. This repository is organized into folders by topic, and includes a description of the approach taken.
 
