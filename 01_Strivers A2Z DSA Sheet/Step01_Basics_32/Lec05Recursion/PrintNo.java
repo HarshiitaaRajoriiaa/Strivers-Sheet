@@ -1,10 +1,12 @@
 package Lec05Recursion;
-//https://www.geeksforgeeks.org/problems/print-1-to-n-without-using-loops-1587115620/1
 public class PrintNo {
     public static void main(String[] args) {
         printNo(10);
         
     }
+
+// ? https://www.geeksforgeeks.org/problems/print-1-to-n-without-using-loops-1587115620/1
+    // ! TC = 0(N)
     public static void printNo(int N){
         if(N>0){
         printNo(N-1);
@@ -12,7 +14,8 @@ public class PrintNo {
         }
     }
 
-    //https://www.geeksforgeeks.org/problems/print-n-to-1-without-loop/1
+    // ! TC = 0(N)
+    //? https://www.geeksforgeeks.org/problems/print-n-to-1-without-loop/1
     void printNos(int N) {
         
         // code here

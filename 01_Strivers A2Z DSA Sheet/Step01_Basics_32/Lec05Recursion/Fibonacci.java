@@ -5,14 +5,13 @@ public class Fibonacci {
         System.out.println(fib(4));
         
     }
+
+
+    // !TC = 0 (2^N).
     public static int fib(int n){
-        if(n==0){
-            return 0;
+        if(n<=1){
+            return n;
         }
-        if(n==1 || n==2){
-            return 1;
-        }
-        int fn = fib(n-1) + fib(n-2);
-        return fn;
+        return fib(n-1) + fib(n-2);
     }
 }

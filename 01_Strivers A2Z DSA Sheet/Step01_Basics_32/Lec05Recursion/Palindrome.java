@@ -30,7 +30,6 @@ public class Palindrome {
                 str.append(s.charAt(i));
             }
         }
-
         for (int i = 0, j = str.length() - 1; i < j; i++, j--) {
             if (str.charAt(i) != str.charAt(j)) {
                 return false;
@@ -51,7 +50,5 @@ public class Palindrome {
         if (Character.toLowerCase(s.charAt(i)) != Character.toLowerCase(s.charAt(e)))
             return false;
         return isPalindormeHelper(s, i + 1, e - 1);
-
     }
-
 }
