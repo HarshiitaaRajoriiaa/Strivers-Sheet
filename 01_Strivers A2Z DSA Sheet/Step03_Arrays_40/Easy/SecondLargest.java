@@ -1,8 +1,6 @@
 package Step03_Arrays_40.Easy;
-
 import java.util.List;
-
-//https://www.geeksforgeeks.org/problems/second-largest3735/1
+//?https://www.geeksforgeeks.org/problems/second-largest3735/1
 public class SecondLargest {
     public static void main(String[] args) {
         
@@ -20,7 +18,7 @@ public class SecondLargest {
             }
         }
         for (int num : arr) {
-            if (num > secondLargest && num < firstLargest) {
+            if (num > secondLargest && num != firstLargest) {
                 secondLargest = num;
             }
         }

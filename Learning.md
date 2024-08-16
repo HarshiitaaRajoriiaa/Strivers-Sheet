@@ -100,5 +100,6 @@ public class Main {
 * gcd(a, b) = gcd(a , a%b) EUCLIDEAN THEORY
 ## 7. String:
 * character.isLetterOrDigit( value ):  returns true if the value contains letters or digits
-
+### 8. Array:
+* in main() array of int dType can be of 10^6 size maximum. and globally 10^7 is possible
 
