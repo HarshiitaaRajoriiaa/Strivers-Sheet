@@ -146,3 +146,41 @@ public class SetExample {
     }
 }
 ```
+
+### Conversions:
+* array[] to arrayList<>:
+``` java
+Integer[] array = {1, 2, 3};
+ArrayList<Integer> list = new ArrayList<>(Arrays.asList(array));
+```
+* arrayList to set:
+``` java
+ArrayList<Integer> list = new ArrayList<>(Arrays.asList(1, 2, 2, 3));
+HashSet<Integer> set = new HashSet<>(list);
+```
+* ArrayList to LinkedList:
+``` java
+ArrayList<Integer> arrayList = new ArrayList<>(Arrays.asList(1, 2, 3));
+LinkedList<Integer> linkedList = new LinkedList<>(arrayList);
+```
+* ArrayList to HashMap
+``` java
+ArrayList<String> list = new ArrayList<>(Arrays.asList("one", "two", "three"));
+HashMap<Integer, String> map = new HashMap<>();
+for (int i = 0; i < list.size(); i++) {
+      map.put(i, list.get(i));
+}
+```
+* HashMap to ArrayList
+``` java
+HashMap<Integer, String> hashMap = new HashMap<>();
+hashMap.put(1, "one");
+hashMap.put(2, "two");
+// Convert keys to ArrayList
+ArrayList<Integer> keysList = new ArrayList<>(hashMap.keySet());
+System.out.println("ArrayList of keys from HashMap: " + keysList);
+        
+// Convert values to ArrayList
+ArrayList<String> valuesList = new ArrayList<>(hashMap.values());
+System.out.println("ArrayList of values from HashMap: " + valuesList);
+```
