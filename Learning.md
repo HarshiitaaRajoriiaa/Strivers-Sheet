@@ -184,3 +184,5 @@ System.out.println("ArrayList of keys from HashMap: " + keysList);
 ArrayList<String> valuesList = new ArrayList<>(hashMap.values());
 System.out.println("ArrayList of values from HashMap: " + valuesList);
 ```
+### 10. SubArray:
+* contiguous part of array 

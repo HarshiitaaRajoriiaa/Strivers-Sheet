@@ -9,6 +9,7 @@ public class ForLoop {
         if (n == 1 || n == 2) {
             System.out.println(1);
             return;
+            
         }
 		int previous = 1; 
         int prePrevious = 1; 
@@ -19,7 +20,7 @@ public class ForLoop {
             previous = current;
 		}
 		System.out.println(current);
-	
+        scanner.close();
 	}
 
 }
