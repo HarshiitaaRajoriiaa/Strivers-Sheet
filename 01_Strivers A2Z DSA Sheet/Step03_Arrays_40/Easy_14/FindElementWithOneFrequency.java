@@ -1,4 +1,4 @@
-package Step03_Arrays_40.Easy;
+package Step03_Arrays_40.Easy_14;
 
 import java.util.HashMap;
 

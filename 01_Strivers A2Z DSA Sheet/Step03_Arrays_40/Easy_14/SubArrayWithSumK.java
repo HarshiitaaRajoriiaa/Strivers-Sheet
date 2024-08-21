@@ -1,4 +1,4 @@
-package Step03_Arrays_40.Easy;
+package Step03_Arrays_40.Easy_14;
 import java.util.*;
 //?https://www.geeksforgeeks.org/problems/longest-sub-array-with-sum-k0809/1
 public class SubArrayWithSumK {
