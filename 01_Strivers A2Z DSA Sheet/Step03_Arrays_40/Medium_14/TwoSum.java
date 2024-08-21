@@ -24,6 +24,5 @@ public class TwoSum {
 
     // *BETTER APPROACH :
     //compliment approach.
-    public static int[] twosumBetter(int arr[] , int n , int K){
-    }
+    
 }

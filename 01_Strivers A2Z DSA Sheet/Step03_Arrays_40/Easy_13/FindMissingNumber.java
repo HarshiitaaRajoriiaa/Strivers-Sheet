@@ -1,4 +1,4 @@
-package Step03_Arrays_40.Easy_14;
+package Step03_Arrays_40.Easy_13;
 //?https://leetcode.com/problems/missing-number/
 public class FindMissingNumber {
     public static void main(String[] args) {

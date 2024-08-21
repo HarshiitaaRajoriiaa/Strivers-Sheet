@@ -1,4 +1,4 @@
-package Step03_Arrays_40.Easy_14;
+package Step03_Arrays_40.Easy_13;
 //?https://www.geeksforgeeks.org/problems/who-will-win-1587115621/1
 public class LinearSearch {
     public static void main(String[] args) {

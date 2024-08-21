@@ -1,4 +1,4 @@
-package Step03_Arrays_40.Easy_14;
+package Step03_Arrays_40.Easy_13;
 import java.util.List;
 //?https://www.geeksforgeeks.org/problems/second-largest3735/1
 public class SecondLargest {

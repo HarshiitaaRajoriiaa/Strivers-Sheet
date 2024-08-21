@@ -1,4 +1,4 @@
-package Step03_Arrays_40.Easy_14;
+package Step03_Arrays_40.Easy_13;
 import java.util.*;
 //?https://leetcode.com/problems/remove-duplicates-from-sorted-array/submissions/1358465154/
 public class RemoveDuplicate {

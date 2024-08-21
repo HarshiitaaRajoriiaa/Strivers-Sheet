@@ -1,4 +1,4 @@
-package Step03_Arrays_40.Easy_14;
+package Step03_Arrays_40.Easy_13;
 
 //?https://leetcode.com/problems/rotate-array/?
 public class RotateArrayByDPlaces {

@@ -1,4 +1,4 @@
-package Step03_Arrays_40.Easy_14;
+package Step03_Arrays_40.Easy_13;
 
 public class RotateArrayBy1Place {
     public static void main(String[] args) {
