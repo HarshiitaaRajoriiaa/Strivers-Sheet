@@ -29,9 +29,9 @@ public class TwoSum {
     // compliment approach.
     // ?https://www.naukri.com/code360/problems/reading_6845742?leftPanelTabValue=SUBMISSION
     public static String read(int n, int[] book, int target) {
-        // Write your code here.
         String ans = "NO";
-        HashMap<Integer, Integer> present = new HashMap<>();
+        HashMap<Integer, Integer> present = new HashMap<>(); 
+        // *hashmap = Key :element -> value:index
         for (int i = 0; i < n; i++) {
             int a = book[i];
             int compliment = target - a;
@@ -65,14 +65,14 @@ public class TwoSum {
         int l=0,r=n-1;
         int arr2[] = Arrays.copyOf(arr,n);
         for(int i=0;i<arr.length;i++){
+            if(arr2[l]+arr2[r]==target){
+                ans = "YES";
+            }
             while(l<r && arr2[l]+arr2[r]!=target){
                 if(arr2[l]+arr2[r]<target)
                     l++;
                 else
                     r--;
-            }
-            if(arr2[l]+arr2[r]==target){
-                ans = "YES";
             }
         }
         return ans;
