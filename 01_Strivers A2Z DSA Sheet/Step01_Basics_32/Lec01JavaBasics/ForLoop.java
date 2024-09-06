@@ -8,8 +8,7 @@ public class ForLoop {
         //start from 1 as: F(1) = 1 , F(2) = 1
         if (n == 1 || n == 2) {
             System.out.println(1);
-            return;
-            
+            return ;
         }
 		int previous = 1; 
         int prePrevious = 1; 

@@ -5,7 +5,6 @@ public class While {
     public static void main(String[] args) {
 
     }
-
     static void printTable(int n) {
         int multiplier = 10;
         while (multiplier > 0) {
@@ -16,5 +15,11 @@ public class While {
         }
         System.out.println();
     }
-
+    public static void reverseTable(int n){
+        int mul = 10;
+        while(mul!=0){
+            System.out.print(n*mul + " ");
+            mul--;
+        }
+    }
 }

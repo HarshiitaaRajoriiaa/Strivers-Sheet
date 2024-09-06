@@ -1,6 +1,6 @@
 package Lec04BasicMaths;
 //https://leetcode.com/problems/reverse-integer/description/
-public class Reverse {
+public class ReverseInteger {
     public static void main(String[] args) {
         System.out.println(reverse(-123));
     }
@@ -9,7 +9,7 @@ public class Reverse {
         while (x != 0) {
             int end = x % 10;
             x /= 10;
-            if (sol > Integer.MAX_VALUE / 10 || (sol == Integer.MAX_VALUE / 10 && end > 7)) { //2147483647
+            if (sol > Integer.MAX_VALUE / 10 || (sol == Integer.MAX_VALUE / 10 && end > 7)) { 
                 return 0;  // Integer overflow
             }
             if (sol < Integer.MIN_VALUE / 10 || (sol == Integer.MIN_VALUE / 10 && end < -8)) { //-2147483648
@@ -19,8 +19,7 @@ public class Reverse {
         }
         return sol;
     }
-
-
-
-    //HANDLING THE BIGGER INPUT:
 }
+
+//The biggest positive Integer is 2147483647 (let’s call it the “Big Max”).
+//The smallest negative Integer is -2147483648 (the “Big Min”).
