@@ -11,7 +11,6 @@ public class PrimeCheck {
                 return "NO"; 
             }
         }
-        
         return "YES"; 
         }
 

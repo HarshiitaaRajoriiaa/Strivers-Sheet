@@ -2,7 +2,7 @@ package Lec04BasicMaths;
 import java.util.ArrayList;
 import java.util.List;
 //https://www.naukri.com/code360/problems/sum-of-all-divisors_8360720?leftPanelTabValue=SUBMISSION
-public class PrintAllDivisors {
+public class SumAllDivisors {
     // *TC = 0(N*sqrt(N)
     public static int sumOfAllDivisors(int n){
         // Write your code here.
@@ -44,3 +44,16 @@ public class PrintAllDivisors {
         return sum;
        }
 }
+// *this is called contribution method :
+// have example of 5 
+// 1 = 1 
+// 2 = 1 + 2
+// 3 = 1 + 3
+// 4 = 1 + 2 + 4
+// 5 = 1 + 5
+//here 1 is coming in every number / five time / added five times and 5/1 = 5 / 1*5 = 5 
+// similarly for 2 , 2 is coming 2 times / 5/2 = 2 / 2*2 = 4
+// similarly for 3 , 3 is coming 1 time / 5/3 = 1 / 3*1 = 3
+// similarly for 4 , 4 is coming 1 time / 5/4 = 1 / 4*1 = 4
+// similarly for 5 , 5 is coming 1 time / 5/5 = 1 / 5*1 = 5
+//total = 21
