@@ -1,5 +1,5 @@
 package Lec04BasicMaths;
-//https://www.naukri.com/code360/problems/check-prime_624934
+//?https://www.naukri.com/code360/problems/check-prime_624934
 public class PrimeCheck {
     public static void main(String[] args) {
         
