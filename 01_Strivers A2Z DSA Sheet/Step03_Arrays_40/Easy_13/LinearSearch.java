@@ -4,14 +4,10 @@ public class LinearSearch {
     public static void main(String[] args) {
         
     }
-    static int searchInSorted(int arr[], int N, int K) {
-
-        // Your code here
-        int ans =-1;
-        for(int i=0;i<N;i++){
-            if(arr[i]== K) 
-            ans =1;
+    static boolean searchInSorted(int arr[], int k) {
+        for(int element : arr){
+            if(element ==k) return true;
         }
-        return ans;
+        return false;
     }
 }

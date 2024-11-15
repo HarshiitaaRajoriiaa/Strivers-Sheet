@@ -8,7 +8,6 @@ public class TwoSum {
     public static void main(String[] args) {
 
     }
-
     // * BRUTE FORCE METHOD: TC = 0(N*N)
     // check for every element with every does they sum up to give number equal to
     // target or not

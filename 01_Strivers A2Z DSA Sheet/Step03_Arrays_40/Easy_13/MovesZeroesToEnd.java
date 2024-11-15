@@ -3,9 +3,9 @@ import java.util.*;
 //?https://leetcode.com/problems/move-zeroes/description/
 public class MovesZeroesToEnd {
     public static void main(String[] args) {
-
     }
-    //* solution 1 : TC = 0(N) / LEARNYARD
+
+    // * solution 1 : TC = 0(N) / LEARNYARD
     public void moveZeroes(int[] nums) {
         int n = nums.length;
         int lastNonZeroFoundAt = 0; // Pointer for the last non-zero element
@@ -25,36 +25,39 @@ public class MovesZeroesToEnd {
         }
     }
 
-    //*BRUTE FORCE METHOD: TC = 0(2N) SC = 0(temp.size())
-    public static void movesZeroesToEndBruteForce(int arr[] , int n){
-        ArrayList<Integer> temp= new ArrayList<>();
-        for(int i=0;i<n;i++) { //TC = 0(N)
-            if(arr[i] !=0) temp.add(arr[i]);
+    // *BRUTE FORCE METHOD: TC = 0(2N) SC = 0(temp.size())
+    public static void movesZeroesToEndBruteForce(int arr[], int n) {
+        ArrayList<Integer> temp = new ArrayList<>();
+        for (int i = 0; i < n; i++) { // TC = 0(N)
+            if (arr[i] != 0)
+                temp.add(arr[i]);
         }
-        for (int i = 0; i < temp.size(); i++) { //Temp.size().
+        for (int i = 0; i < temp.size(); i++) { // Temp.size().
             arr[i] = temp.get(i);
         }
-        for (int i = temp.size(); i < arr.length; i++) { //n-temp.size().
+        for (int i = temp.size(); i < arr.length; i++) { // n-temp.size().
             arr[i] = 0;
         }
     }
-    //*OPTIMAL SOLUTION TC =0(N)
-    public static void moveZeros(int n, int []a) {
+
+    // *OPTIMAL SOLUTION TC =0(N)
+    public static void moveZeros(int n, int[] a) {
         int j = -1;
-        //place the pointer j:
+        // place the pointer j:
         for (int i = 0; i < n; i++) {
             if (a[i] == 0) {
                 j = i;
                 break;
             }
         }
-        //no non-zero elements:
-        if (j == -1) return;
-        //Move the pointers i and j
-        //and swap accordingly:
+        // no non-zero elements:
+        if (j == -1)
+            return;
+        // Move the pointers i and j
+        // and swap accordingly:
         for (int i = j + 1; i < n; i++) {
             if (a[i] != 0) {
-                //swap a[i] & a[j]:
+                // swap a[i] & a[j]:
                 int tmp = a[i];
                 a[i] = a[j];
                 a[j] = tmp;

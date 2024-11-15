@@ -4,13 +4,12 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
+import java.util.TreeSet;
 
 //?https://www.geeksforgeeks.org/problems/union-of-two-sorted-arrays-1587115621/1
 public class UnionOfArray {
     public static void main(String[] args) {
-
     }
-
     // *BRUTE FORCE METHOD: TC=O((n+m)log(n+m))
     // *SC=0(2(N+M))
     public static ArrayList<Integer> findUnion(int arr1[], int arr2[], int n, int m) {
@@ -63,8 +62,24 @@ public class UnionOfArray {
             }
             j++;
         }
-
         return list;
     }
+    
 
+
+
+    //Java utils
+    public static ArrayList<Integer> findUnion(int a[], int b[]) {
+        // add your code here
+        Set<Integer> union = new TreeSet<>();
+        ArrayList<Integer> ans = new ArrayList<>();
+        for(int element : a){
+             union.add(element);
+        }
+        for(int element :b){
+            union.add(element);
+        }
+        ans.addAll(union);
+        return ans;
+    }
 }

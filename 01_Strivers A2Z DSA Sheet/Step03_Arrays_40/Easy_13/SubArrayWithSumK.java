@@ -4,10 +4,6 @@ import java.util.*;
 
 //?https://www.geeksforgeeks.org/problems/longest-sub-array-with-sum-k0809/1
 public class SubArrayWithSumK {
-    public static void main(String args[]) {
-
-    }
-
     // * BRUTE FORCE METHOD: generate all sub-arrays of sum is K than find the
     // sub-array with length.
     // ! TC =0(N^3) approximately SC = 0(1)
@@ -22,7 +18,6 @@ public class SubArrayWithSumK {
         }
         return MaxLength;
     }
-
     public static int sum(int arr[], int l, int r) {
         int sum = 0;
         for (int i = l; i <= r; i++) {
@@ -30,7 +25,6 @@ public class SubArrayWithSumK {
         }
         return sum;
     }
-
     // *BETTER SOLUTION:
     // ! TC=0(N^2)
     public static int SubArrayMaxLengthBetter(int arr[], int n, int k) {
@@ -74,24 +68,18 @@ public class SubArrayWithSumK {
 
     // *OPTIMIZED APPROACH: 2 pointers approach and greedy.
     public static int lenOfLongSubarrPositive(int A[], int N, int K) {
-        // Complete the function
-        // 2 pointers approach.
         int l = 0, r = 0;
         int sum = 0;
         int length = 0;
-
         while (r < N) {
             sum += A[r];
-            // Adjust the left pointer if the current sum exceeds K
             while (l <= r && sum > K) {
                 sum -= A[l];
                 l++;
             }
-            // If the current sum equals K, update the maximum length
             if (sum == K) {
                 length = Math.max(length, r - l + 1);
             }
-            // Move the right pointer to the next element
             r++;
         }
         return length;

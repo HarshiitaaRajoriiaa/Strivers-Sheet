@@ -1,6 +1,6 @@
 package Step03_Arrays_40.Medium_14;
 //?https://leetcode.com/problems/sort-colors/description/
-public class SortColor {
+public class Sortcolor {
     public static void main(String[] args) {
         
     }

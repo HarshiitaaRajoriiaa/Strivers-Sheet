@@ -5,28 +5,18 @@ public class SecondLargest {
     public static void main(String[] args) {
         
     }
-    public int print2largest(List<Integer> arr) {
+    public int getSecondLargest(int[] arr) {
         // Code Here
-        if (arr == null || arr.size() < 2) {
-            return -1; // Or throw an exception, depending on your requirements
-        }
-        int firstLargest = Integer.MIN_VALUE;
-        int secondLargest = Integer.MIN_VALUE;
-        for (int num : arr) {
-            if (num > firstLargest) {
-                firstLargest = num;
+        if(arr.length==0 || arr.length == 1) return -1;
+        int max = -1;
+        int sMax = -1;
+        for(int i=0;i<arr.length;i++){
+            if(arr[i] > max) {
+                sMax = max;
+                max = arr[i];
             }
+            if(arr[i] > sMax && arr[i] != max) sMax = arr[i];  
         }
-        for (int num : arr) {
-            if (num > secondLargest && num != firstLargest) {
-                secondLargest = num;
-            }
-        }
-        if (secondLargest == Integer.MIN_VALUE) {
-            return -1; // Or handle it differently if needed
-        }
-
-        return secondLargest;
-
+        return sMax;
     }
 }
