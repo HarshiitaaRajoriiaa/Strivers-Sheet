@@ -1,4 +1,4 @@
-package Step04_BinarySearch_31;
+package Step04_BinarySearch_32.BS_1D_Arrays;
 //?https://www.geeksforgeeks.org/problems/ceil-the-floor2802/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=ceil-the-floor
 import java.util.Arrays;
 

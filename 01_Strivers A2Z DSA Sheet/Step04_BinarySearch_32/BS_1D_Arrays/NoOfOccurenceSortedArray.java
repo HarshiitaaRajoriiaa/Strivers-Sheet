@@ -1,4 +1,4 @@
-package Step04_BinarySearch_31;
+package Step04_BinarySearch_32.BS_1D_Arrays;
 
 public class NoOfOccurenceSortedArray {
     public static void main(String[] args) {
