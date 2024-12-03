@@ -1,7 +1,7 @@
+package Step04_BinarySearch_32.BS_1D_Arrays;
 //? https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
 public class FirstandLastIndexInSortedArray {
     public static void main(String[] args) {
-        
     }
     //!TC = 0(N) === required (logN)
     public static int[] indexPair(int arr[], int x, int n){

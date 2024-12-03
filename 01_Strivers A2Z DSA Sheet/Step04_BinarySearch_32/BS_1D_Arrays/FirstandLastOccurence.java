@@ -1,5 +1,4 @@
 package Step04_BinarySearch_32.BS_1D_Arrays;
-
 public class FirstandLastOccurence {
     public static void main(String[] args) {
         
