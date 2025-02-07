@@ -8,6 +8,59 @@ public class Queue {
     
 }
 
+
+
+
+class QueueLL{
+    int size;
+    Node front;
+    Node back;
+    private static class Node {
+        int data;
+        Node next;
+
+        public Node(int data) {
+            this.data = data;
+            this.next = null;
+        }
+    }
+
+ 
+    public QueueLL() {
+        front=null;
+        back=null;
+        size=0;
+    }
+    public void push(int n){
+        Node temp = new Node(n);
+        if(front==null){
+            front=back=temp;
+            size++;
+        }
+        else{
+            back.next=temp;
+            back=temp;
+            size++;
+        }
+        
+    }
+    public int pop(){
+        if(front==null){
+            throw new RuntimeException("queue is empty");
+        }
+        else {
+            Node temp = front;
+            front = front.next;
+            size--;
+            return temp.data;
+
+        }
+    }
+    public int size(){
+        return size;
+    }
+}
+
 //! TC=0(1) SC=0(N)
 class QueueArray{
      private int Queue[];

@@ -1,7 +1,68 @@
 package Step09_StacksQueue_30;
+//  top --> Node -> Node -> Node -> Node -> Node -> Node -> Node |end of stack
 
-class StackLinkList{
+// import java.util.*;
+
+class StackQueue{
     
+}
+//! TC=0(1) SC=0(N)
+class StackLinkList {
+    private Node top;
+    private int size;
+
+    // Node class
+    private static class Node {
+        int data;
+        Node next;
+
+        public Node(int data) {
+            this.data = data;
+            this.next = null;
+        }
+    }
+
+    // Constructor
+    public StackLinkList() {
+        top = null;
+        size = 0;
+    }
+
+    // Push method
+    public void push(int n) {
+        Node newN = new Node(n);
+        newN.next = top; // New node points to previous top
+        top = newN; // Update top to new node
+        size++;
+    }
+
+    // Pop method
+    public void pop() {
+        if (top == null) {
+            System.out.println("Stack is empty");
+            return;
+        }
+        top = top.next; // Move top to the next node
+        size--;
+    }
+
+    // Peek method (optional, to get the top element)
+    public int peek() {
+        if (top == null) {
+            throw new RuntimeException("Stack is empty");
+        }
+        return top.data;
+    }
+
+    // Size method
+    public int size() {
+        return size;
+    }
+
+    // Check if stack is empty
+    public boolean isEmpty() {
+        return top == null;
+    }
 }
 
 //! TC=0(1) SC=0(N)
