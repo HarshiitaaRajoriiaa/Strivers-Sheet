@@ -1,5 +1,4 @@
 package Lec01JavaBasics;
-
 public class Function {
     public static void main(String[] args) {
         int a= 0;
@@ -8,19 +7,16 @@ public class Function {
         System.out.println(a  );
         System.out.println(b  );
         System.out.println(passedBy(1, 2));
-
         int x = 5;
         int y = change(x);
         System.out.println(y);
         System.out.println(x);
-        
     }
     static int[] passedBy(int a, int b) {
-        // code here
         //?a by value and b by reference 
         int ma = a+1;
         int barray[] = {b};
-        reference(barray);
+        reference(barray); //added 2 in the value as asked in question
         
         int result[] = { ma,barray[0]};
         return result;
@@ -59,3 +55,6 @@ public class Function {
 // ?Other:
 // *Hash Table / Hash Map – A collection of key-value pairs, where data is accessed by keys.
 // *Set – A collection of unique elements (no duplicates allowed).
+
+
+
