@@ -1,11 +1,28 @@
 package Step09_StacksQueue_30;
 //  top --> Node -> Node -> Node -> Node -> Node -> Node -> Node |end of stack
 
-// import java.util.*;
+import java.util.LinkedList;
 
-class StackQueue{
-    
-}
+
+//using one queue by striver
+//todo class StackQueue{
+//     Queue <Integer> q = new LinkedList<>();
+//     void push(it a){
+//         q.add(a);
+//         while(q.size()>1){
+//             q.add(q.remove());
+//         }
+//     }
+//     int pop() {
+//         return q.remove();
+//     }
+//     int top() {
+//         return q.peek();
+//     }
+//     int size() {
+//         return q.size();
+//     }
+// }
 //! TC=0(1) SC=0(N)
 class StackLinkList {
     private Node top;
