@@ -1,4 +1,5 @@
 package Step03_Arrays_40.Easy_13;
+import java.util.Arrays;
 import java.util.List;
 //?https://www.geeksforgeeks.org/problems/second-largest3735/1
 public class SecondLargest {
@@ -11,6 +12,7 @@ public class SecondLargest {
         for(int  i= arr.length - 1; i>=0; i--) {
             if(arr[i]!=arr[i-1]) return arr[i-1];  // If the current element is not equal to the previous one, it's the second largest.
         }
+        return -1;
     }
     // worst case : {1 ,7 , 7 , 7 , 7 }
 

@@ -5,6 +5,8 @@ package Step09_StacksQueue_30.Learning;
 //  Prefix -> Infix , Prefix -> Postfix
 //  Postfix -> Infix , Postfix -> Prefix
 // precedence  ^ > ( * , / ) > ( + , - )
+// operators  -> - + * ? ^ > > 
+// operands -> A-Z , a-z , 0-9
 public class Conversions {
     
 }
