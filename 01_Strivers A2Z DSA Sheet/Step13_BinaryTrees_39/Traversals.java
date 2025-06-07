@@ -3,7 +3,7 @@
 //* PREORDER:  root left right
 //* POSTORDER: left right root
 
-public class L3Traversals {
+public class Traversals {
 
     // Preorder
     public static void preOrder(Node root) {
@@ -50,24 +50,24 @@ public class L3Traversals {
 // }
 
 // todo iterative Preorder traversal
-//using stack : phle print baad m add ,  right then left , LIFO
+// using stack : phle print baad m add , right then left , LIFO
 // public List<Integer> preorderTraversal(TreeNode root) {
-//     List<Integer> ans = new ArrayList<>();
-//     if (root == null)
-//         return ans;
-//     Stack<TreeNode> s = new Stack<>();
-//     s.push(root);
-//     while (!s.isEmpty()) {
-//         root = s.pop();
-//         ans.add(root.val);
-//         if (root.right != null)
-//             s.push(root.right);
-//         if (root.left != null)
-//             s.push(root.left);
+// List<Integer> ans = new ArrayList<>();
+// if (root == null)
+// return ans;
+// Stack<TreeNode> s = new Stack<>();
+// s.push(root);
+// while (!s.isEmpty()) {
+// root = s.pop();
+// ans.add(root.val);
+// if (root.right != null)
+// s.push(root.right);
+// if (root.left != null)
+// s.push(root.left);
 
-//     }
-//     return ans;
-// } 
+// }
+// return ans;
+// }
 
 // ?
 // https://leetcode.com/problems/binary-tree-inorder-traversal/submissions/1647737083/
@@ -84,6 +84,9 @@ public class L3Traversals {
 // inOrder(root.right , ans);
 // }
 
+// todo iterative inorder traversal
+// using stack
+
 // ? https://leetcode.com/problems/binary-tree-postorder-traversal/
 // public List<Integer> postorderTraversal(TreeNode root) {
 // List<Integer> ans = new ArrayList<>();
@@ -99,4 +102,31 @@ public class L3Traversals {
 // postOrder(node.right, ans);
 // ans.add(node.val); // Visit root
 // Traverse right
+// }
+
+
+// todo iterative postorder
+// using 2 stacks
+// public List<Integer> postorderTraversal(TreeNode root) {
+//     List<Integer> ans = new ArrayList<>();
+//     Stack<TreeNode> s1 = new Stack<>();
+//     Stack<TreeNode> s2 = new Stack<>();
+//     if (root == null)
+//         return ans;
+//     s1.push(root);
+
+//     while (!s1.isEmpty()) {
+//         TreeNode curr = s1.pop(); // tos
+//         s2.push(curr);
+
+//         if (curr.left != null)
+//             s1.push(curr.left);
+//         if (curr.right != null)
+//             s1.push(curr.right);
+//     }
+
+//     while (!s2.isEmpty()) {
+//         ans.add(s2.pop().val);
+//     }
+//     return ans;
 // }

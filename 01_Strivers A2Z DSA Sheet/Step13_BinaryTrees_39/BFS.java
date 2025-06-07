@@ -15,7 +15,7 @@ class TreeNode {
     }
 }
 
-public class L4BFS {
+public class BFS {
     public static void main(String[] args) {
 
     }
