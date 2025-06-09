@@ -1,3 +1,3 @@
-public Top {
+public  class Top {
     
 }
