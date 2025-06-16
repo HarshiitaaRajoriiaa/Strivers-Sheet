@@ -8,14 +8,15 @@ public class MergeSort {
     public static void  mergeSort(int arr[] ,  int start, int end){
         if(start>=end) return;
         int mid = (start+end)/2;
+
         //recursive call
         mergeSort(arr, start, mid);
-        mergeSort(arr, mid+1, end);
+        mergeSort(arr, mid+1, end); 
         //merge sorted array
-        merge(arr, start, mid, end);
+        merge(arr, start, end);
     }
-    public static void merge(int arr[] , int low , int mid , int high){
-        mid = (low+high)/2;
+    public static void merge(int arr[] , int low , int high){
+        int mid = (low+high)/2;
         int i = low;
         int j = mid+1;
         int temp[] = new int[arr.length];
@@ -38,7 +39,7 @@ public class MergeSort {
         }
         //copying temp array to original array
         for(int z=0;z<arr.length;z++){
-            arr[z] = temp[z];
+            arr[low+z] = temp[z];
         }
     }
     
