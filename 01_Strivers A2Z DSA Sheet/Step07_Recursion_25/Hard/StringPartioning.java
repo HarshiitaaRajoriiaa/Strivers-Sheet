@@ -1,5 +1,5 @@
-package Hard;
 
+import java.util.*;
 public class StringPartioning {
     
 }
