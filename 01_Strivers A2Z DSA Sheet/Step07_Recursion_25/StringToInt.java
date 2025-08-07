@@ -1,4 +1,3 @@
-package Hold;
 
 //? https://leetcode.com/problems/string-to-integer-atoi/submissions/1663648090/
 public class StringToInt {

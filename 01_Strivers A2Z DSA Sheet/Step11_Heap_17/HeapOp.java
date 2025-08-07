@@ -10,7 +10,16 @@ public class HeapOp {
         }
 
         public MaxHeap(int arr[]) {
-            // build Heap with given set of elements
+            // todo build Heap with given set of elements
+            Heap = new ArrayList<>();
+            for (int el : arr) {
+                Heap.add(el);
+            }
+
+            for (int i = (arr.length - 1) / 2; i >= 0; i--) {
+                Heapify(i);
+            }
+
         }
 
         public int peek() {
@@ -73,12 +82,48 @@ public class HeapOp {
         // place and run heapify
         // return maximum element and delete it from the Heap
         public int pop() {
+            size = Heap.size();
+            if (size == 0)
+                return 0;
+
+            int max = size - 1;
+            size--;
+            Heap.set(0, Heap.get(max)); // * */ swapping the last element from the heap
+
+            // todo check for rule violation
+            Heapify(0);
+
+            // pop part
+            return Heap.get(max);
 
         }
     }
 
-    public static void main(String[] args) {
+    public class MinHeap {
+        List<Integer> Heap;
 
+        public MinHeap() {
+            Heap = new ArrayList<>();
+        }
+
+        public MinHeap(int arr[]) {
+            Heap = new ArrayList<>();
+            for (int el : arr) {
+                Heap.add(el);
+            }
+
+            for (int i = (arr.length - 1) / 2; i >= 0; i--) {
+                Heapify(i);
+            }
+        }
+    
+
+        //return the minimum element of Heap
+        public int peek(){
+            int size = Heap.size();
+        }
+    
+    
     }
 
 }
