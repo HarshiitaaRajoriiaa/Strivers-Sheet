@@ -10,7 +10,7 @@ public class ClimbStairs {
     }
     private static int helper( int i ,  int dp[]){
         if(i==0) return 1;
-        if(i==1) return 1;
+        if(i==1) return 1; 
         if(dp[i]!=-1) return dp[i];
         int one = helper(i-1,dp);
         int two=helper(i-2, dp);

@@ -1,10 +1,7 @@
-
 package Subsequence;
 
 import java.util.ArrayList;
 import java.util.List;
-
-
 public class PrintAllsubsequences {
     public static void printSubsequences(String input) {
         // Write your code here
@@ -28,31 +25,26 @@ public class PrintAllsubsequences {
         helper(input, index + 1, output);
     }
 
-
-
-
-    //? https://leetcode.com/problems/subsets/
+    // ? https://leetcode.com/problems/subsets/
     public List<List<Integer>> subsets(int[] nums) {
         List<List<Integer>> ans = new ArrayList<>();
         List<Integer> curr = new ArrayList<>();
-        helper(nums , 0 ,  curr , ans);
+        helper(nums, 0, curr, ans);
         return ans;
     }
 
-
-    public void helper(int[] nums , int i , List<Integer> curr ,  List<List<Integer>> ans ){
-        if(i==nums.length) {
+    public void helper(int[] nums, int i, List<Integer> curr, List<List<Integer>> ans) {
+        if (i == nums.length) {
             ans.add(new ArrayList<>(curr));
             return;
         }
 
-        //take
+        // take
         curr.add(nums[i]);
-        helper(nums, i+1 ,curr ,  ans);
+        helper(nums, i + 1, curr, ans);
 
-
-        //not-take
+        // not-take
         curr.remove(curr.size() - 1);
-        helper(nums , i+1 , curr, ans);
+        helper(nums, i + 1, curr, ans);
     }
 }
